@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/ac3caa5a3e.js" crossorigin="anonymous"></script>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo2">
+     <ul>
+                    <li><a href="/">Home</a></li>
+                   <li><a href="/">About</a></li>
+                    <li><a href="/">Portfolio</a></li>
+                    <li><a href="/">Contact Me</a></li> 
+                    
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Web Developer</p>
+                <h2>Hi, I'm <span>Preeti </span><br>Mittal From India.</h2>
+            </div>
+            </div>
+        </div>
+        <!-----about------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/profile.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sapiente unde odit soluta vero perspiciatis recusandae, atque dignissimos adipisci nam id rem sit corporis earum nulla odio debitis ex sunt vel placeat cum maxime ad magnam accusantium? Sint nostrum reiciendis iusto consectetur vero vel voluptate fugiat repudiandae quis quos, odio cupiditate est incidunt, quia eveniet asperiores modi consequatur voluptatem at.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                          <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>Video Editor</span><br>Animator Video Editor</li>
+                                <li><span>Researcher</span><br>Working on Research Projects</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Web Development</span><br>Learnt from Code With Harry</li>
+                                <li><span>Research</span><br>Working on Research Project of Grain Boundaries of Metals</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018-2019</span><br>10th from S.K.L.G.D.Public School.</li>
+                                <li><span>2020-2021</span><br>12th from S.K.L.G.D.Public School.</li>
+                                <li><span>2022-2026</span><br>Btech at Nit Jalandhar.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class ="layer">
+                    <h2>Gym Website</h2>
+                   </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class ="layer">
+                    <h2>Video Editing</h2>
+                   </div>
+            </div>
+            <div class="work">
+                <img src="images/work4.png">
+                <div class ="layer">
+                    <h2>Research Project</h2>
+                   </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-----------Contact Me-------->  
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>preetimittal41998@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7451952666</p>
+                    <div class="social-icons">
+                    <a href="https://x.com/PreetiMittal29"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/p_reetu29"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/preeti-mittal-9a0976275"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https//t.me/preeti2911"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <a href="" class="btn">Download CV/Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+      <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+            
+            </script>
+</body>
+</html>
